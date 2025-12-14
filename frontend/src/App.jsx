@@ -44,6 +44,7 @@ function ResultCard({ title = "Result", payload, prob, threshold, extra }) {
       <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
         <h3 style={{ margin: 0 }}>{title}</h3>
         <span
+
           style={{
             padding: "6px 10px",
             borderRadius: 999,
@@ -58,7 +59,7 @@ function ResultCard({ title = "Result", payload, prob, threshold, extra }) {
       </div>
 
       <div style={{ marginTop: 12 }}>
-        {/* <div style={{ fontSize: 13, color: s.text, marginBottom: 6 }}>
+        {/* <div style={{ fontSize: 13, color: s.text, marginBottom: 6 }} hello>
           Malicious probability: <b>{pct}%</b> (threshold: {(threshold * 100).toFixed(0)}%)
         </div> */}
         <PercentBar value={prob * 100} />
