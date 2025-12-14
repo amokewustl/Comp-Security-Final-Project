@@ -59,7 +59,7 @@ function ResultCard({ title = "Result", payload, prob, threshold, extra }) {
       </div>
 
       <div style={{ marginTop: 12 }}>
-        {/* <div style={{ fontSize: 13, color: s.text, marginBottom: 6 }} hello>
+        {/* <div style={{ fontSize: 13, color: s.text, marginBottom: 6 }}>
           Malicious probability: <b>{pct}%</b> (threshold: {(threshold * 100).toFixed(0)}%)
         </div> */}
         <PercentBar value={prob * 100} />
