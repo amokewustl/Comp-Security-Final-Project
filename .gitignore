@@ -1,0 +1,97 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# =========================
+# Secrets / Environment
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# ML artifacts (choose what to commit)
+# =========================
+# Trained models can be large; usually don't commit
+backend/models/
+# If you DO want to commit a model, comment the line above
+# or keep a small placeholder file only.
+
+# Allow scripts and example placeholders inside data/
+!backend/data/*.py
+!backend/data/README.md
+!backend/data/.gitkeep
+
+# If you specifically want to allow a tiny sample CSV:
+!backend/data/sample_qr_dataset.csv
+
+# =========================
+# Node / React
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
